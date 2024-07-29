@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+<title>Learning</title>
+<link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+    <!--BASICS-->
+    <h1>Anisha Hossain Megha</h1> <!-- heading font-->
+    <hr> <!-- creates a line breaker-->
+    <h6>My name is Anisha Hossain Megha</h6> <!-- body font-->
+    <br> <!-- creates a line space-->
+    <h6>My name is Anisha Hossain Megha</h6>
+    <p>new paragraph</p> <!-- paragraphs auto add space line and lorem puts in sample text-->
+    
+    <!--HYPERLINKS-->
+    
+    <a href = "https://usflearn.instructure.com/" target="_blank" title="takes you to canvas">
+ <!-- hyper link contained within text put below takes you directly to that page link
+target takes you to that page in a new tab and title is text shown when you are hovering over link-->
+        Canvas
+    </a>
+    <br>
+    <a href="mailto:anishahossain21@gmail.com" target="_self">
+        email me
+    </a>
+    <br>
+    <a href = "page2.html"> <!-- since same directory just file name is enough or use file path - usefule for navigation -->
+        Go to Page 2
+
+    </a>
+    <br>
+    <br>
+
+    <!--IMAGES-->
+    <a href="https://wallpapers-clan.com/desktop-wallpapers/cute-kirby-flowers/"> <!--hyperlinks image to a page-->
+    <img src="images.jpg" height="150" alt="Kirby image">
+    </a>
+
+    <br>
+    <br>
+    Audio file
+    <br>
+    <!--AUDIO-->
+    <audio controls src="The Rainy Road - Lish Grooves.mp3">
+<!--contols is a boolean attribute - there is also autoplay, muted, loop
+we can also have backups as different file formats that will work for the browser-->
+    </audio>
+    <!--we can also put videos in MP4, WebM and Ogg format-->
+<br>
+<!--TABLES-->
+<table bgcolor="red"> <!--table outline-->
+    <tr bgcolor="pink"> <!--table header and how to put color and set width-->
+        <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+    </tr>
+
+    <tr bgcolor="pink" align="center"> <!--table data and how to put colorand alignment-->
+        <td>9-5</td>
+        <td>9-5</td>
+    </tr>
+</table>
+<br>
+    <!--span = adds markup to  portion of document
+    div = defines division of a document-->
+
+    <lorem>
+        <span style="color: pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam repudiandae quos at consequuntur laborum provident 
+        expedita harum ex earum esse</span>, pariatur facere nemo atque minus corrupti dolorem perferendis autem!
+    </lorem>
+    <div style="background-color: pink">
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam repudiandae quos at consequuntur laborum provident 
+        expedita harum ex earum esse, pariatur facere nemo atque minus corrupti dolorem perferendis autem!
+    </p></div>
+
+    <!--iframe = embed contect from another source (or another HTML document) into HTML document
+    e.g. - adds, hacking tech-->
+
+    <!--BUTTONS-->
+    <br>
+    <a href="https://www.youtube.com/watch?v=Ty9Pcg3qrmU" target="_blank">
+    <button style="background-color: bisque; border-radius: 5px;">click !!</button> 
+    <!-- we can also disable button by putting 'disabled' in button tag
+    using JavaScript we can have buttons perform a specific function-->
+    </a>
+
+    <!--FORMS- getting info from user-->
+    <form> <!--action="action_page.php" method="get" to use data and submi it for something-->
+        <label for="fname">first name:</label> 
+        <input type="text" id="fname" name="fname" placeholder="Enter"> <!--using required here will make it mandatory to ill form
+            name is the variable name given to submitted data-->
+        <!--this enables user to go to form when they click on label-->
+<!-- there are other types such as password(hidden), email, telephone number, date, number and set limit-->
+    <br>
+
+    <div>
+        <label>Mr. </label>
+        <input type="radio" name="button"> <!--radio buttons, to group them we put same name so only one can be selected-->
+        <label>Mrs. </label>
+        <input type="radio" name="button"> 
+        <!--we can also put a tilte for radio buttons and for and id-->
+    </div>
+    <br>
+    <!--dropdown-->
+    <div>
+        <label for="payment">payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+        </select>
+    </div>
+
+    <br>
+    <!--checkbox button-->
+    <div>
+        <label for="yes">yes:</label>
+        <input type="checkbox" id="yes" name="yes" min="0">
+
+    </div>
+
+    <br>
+
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+<br>
+<br>
+<br>
+
+<div id="box">
+ Animation
+</div>
+
+</body>
+</html>
+
+

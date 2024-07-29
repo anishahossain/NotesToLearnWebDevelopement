@@ -1,0 +1,44 @@
+#box{
+    width: 250px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    /*to enable animation we need to set animation name and duration time*/
+    animation: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /*how many times the animaion will take place*/
+    animation-play-state: running;
+    animation-delay: 1s; /*delay between animations*/
+    animation-timing-function: linear; /*animation starts slowly and accelerates
+    ease-out - decelerates and there is a both option (linear is constant)*/
+    /*shortcut for using all properties tog*/
+    /*animation: duration funtion delay count state name of animation*/
+}
+
+/*using pseudoclass for animation*/
+/*#box:hover{
+    animation: duration funtion delay count state name of animation
+} animation will only occur when hovering cursor*/
+
+@keyframes example /*sliding from left to right*/
+{
+    from{margin-left: 100%;} /*beggining property*/
+    to{margin-left: 0%;} /*ending proprty*/
+}
+
+@keyframes rotateobject {
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes opacitychange {
+    50%{opacity:0;} /*opcity will change every 50% state (100 percent eill have a snapback and no gradual transition)*/
+}
+/*using 50%{transform: scale(0.5, 05.5);} - we can change size*/
+
+@keyframes colorchange{
+    0%{background-color: blue;}
+    20%{background-color: pink;}
+    50%{background-color: blue;}
+    80%{background-color: pink;}
+    100%{background-color: blue;}
+}
